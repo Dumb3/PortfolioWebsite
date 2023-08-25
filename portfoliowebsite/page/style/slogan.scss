@@ -1,0 +1,24 @@
+@import 'whoami.scss';
+.slogan{
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  text-align: center;
+  color: white;
+  margin-top: 120px;
+  font-family: $gara;
+  font-size: 85px;
+  margin-bottom: 100px;
+  
+}
+
+.slogan-span{
+  color: rgb(100, 248, 224);
+  text-shadow: 2.5px 2px 5px rgb(100, 248, 220);
+}
+@media (max-width: 457px){
+    .slogan{
+      margin-bottom: 300px;
+    }
+}
+  

@@ -1,0 +1,32 @@
+.sidebar {
+  position: absolute;
+  width: 20%;
+  height: 200px;
+  background-color: transparent;
+  margin-right: 5px;
+  text-align: center;
+  top: 0;
+  right: 0;
+  vertical-align: center;
+}
+
+.sidebar-list {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-content: center;
+}
+
+.sidebar-list li {
+  padding: 15px;
+}
+
+.fa-brands {
+  color: aqua;
+}
+
+.fa-brands:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}/*# sourceMappingURL=side.css.map */

@@ -1,0 +1,1250 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.5.0" title="Shotcut version 22.01.30" producer="main_bin">
+  <profile description="automatic" width="1280" height="720" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="177195" frame_rate_den="2953" colorspace="709"/>
+  <chain id="chain0" out="00:00:09.882">
+    <property name="length">00:00:09.899</property>
+    <property name="eof">pause</property>
+    <property name="resource">GREEN SCREEN INSCREVA-SE E LIKE By MIGUEL.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">384bce5a8dafd1e38cde60c469b29999</property>
+  </chain>
+  <chain id="chain1" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+  </chain>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+    <entry producer="chain0" in="00:00:00.000" out="00:00:09.882"/>
+    <entry producer="chain1" in="00:00:00.000" out="00:03:16.899"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="01:02:21.098">
+    <property name="length">01:02:21.115</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="01:02:21.098"/>
+  </playlist>
+  <chain id="chain2" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter0" out="00:03:16.332">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter2" out="00:03:16.332">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+  </chain>
+  <chain id="chain3" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter1" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter3" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter4" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter5" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain4" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter6" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter7" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter8" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter9" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain5" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter10" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter11" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter12" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter13" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain6" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter14" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter15" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter16" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter17" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain7" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter18" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter19" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter20" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter21" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain8" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter22" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter23" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter24" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter25" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain9" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter26" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter27" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter28" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter29" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain10" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter30" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter31" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter32" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter33" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain11" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter34" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter35" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter36" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter37" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain12" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter38" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter39" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter40" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter41" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain13" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter42" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter43" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter44" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter45" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain14" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter46" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter47" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter48" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter49" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain15" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter50" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter51" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter52" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter53" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain16" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter54" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter55" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter56" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter57" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain17" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter58" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter59" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter60" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter61" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain18" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter62" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter63" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter64" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter65" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain19" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter66" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter67" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter68" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter69" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain20" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter70" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:01.000=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter71" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:03:16.215=1;00:03:16.899=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter72" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">61</property>
+    </filter>
+    <filter id="filter73" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:03:16.215=0;00:03:16.899=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <chain id="chain21" out="00:03:16.899">
+    <property name="length">00:03:16.915</property>
+    <property name="eof">pause</property>
+    <property name="resource">fightback1hour.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3fa01f5bece58e0452ee974602a73028</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2022-06-12T19:54:09</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">fightback1hour.mp4</property>
+    <filter id="filter74" in="00:03:16.349" out="00:03:16.899">
+      <property name="start">1</property>
+      <property name="level">00:00:00.567=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+    <filter id="filter75" in="00:03:16.349" out="00:03:16.899">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.567=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">42</property>
+    </filter>
+  </chain>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="chain2" in="00:00:00.000" out="00:03:16.332"/>
+    <entry producer="chain3" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain4" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain5" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain6" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain7" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain8" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain9" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain10" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain11" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain12" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain13" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain14" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain15" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain16" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain17" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain18" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain19" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain20" in="00:00:00.000" out="00:03:16.899"/>
+    <entry producer="chain21" in="00:03:16.349" out="00:03:16.899"/>
+  </playlist>
+  <chain id="chain22" out="00:00:09.882">
+    <property name="length">00:00:09.899</property>
+    <property name="eof">pause</property>
+    <property name="resource">GREEN SCREEN INSCREVA-SE E LIKE By MIGUEL.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">384bce5a8dafd1e38cde60c469b29999</property>
+    <property name="shotcut:caption">GREEN SCREEN INSCREVA-SE E LIKE By MIGUEL.mp4</property>
+    <filter id="filter76" out="00:00:09.882">
+      <property name="version">0.4</property>
+      <property name="mlt_service">frei0r.bluescreen0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00ef00</property>
+      <property name="1">0.288</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter77" out="00:00:09.882">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-197.168 398.23 849.558 477.876 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter78" out="00:00:09.882">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">00:00:09.299=1;00:00:09.882=0</property>
+      <property name="shotcut:animOut">36</property>
+    </filter>
+    <filter id="filter79" out="00:00:09.882">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">00:00:00.000=0;00:00:00.483=1</property>
+      <property name="shotcut:animIn">30</property>
+    </filter>
+    <filter id="filter80" out="00:00:09.882">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+    <filter id="filter81" out="00:00:09.882">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:09.299=0;00:00:09.882=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">36</property>
+    </filter>
+    <filter id="filter82" out="00:00:09.882">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:00.483=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">30</property>
+    </filter>
+  </chain>
+  <chain id="chain23" out="00:00:09.882">
+    <property name="length">00:00:09.899</property>
+    <property name="eof">pause</property>
+    <property name="resource">GREEN SCREEN INSCREVA-SE E LIKE By MIGUEL.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">384bce5a8dafd1e38cde60c469b29999</property>
+    <property name="shotcut:caption">GREEN SCREEN INSCREVA-SE E LIKE By MIGUEL.mp4</property>
+    <filter id="filter83" out="00:00:09.882">
+      <property name="version">0.4</property>
+      <property name="mlt_service">frei0r.bluescreen0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00ef00</property>
+      <property name="1">0.288</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter84" out="00:00:09.882">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-197.168 398.23 849.558 477.876 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter85" out="00:00:09.882">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">00:00:09.299=1;00:00:09.882=0</property>
+      <property name="shotcut:animOut">36</property>
+    </filter>
+    <filter id="filter86" out="00:00:09.882">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">00:00:00.000=0;00:00:00.483=1</property>
+      <property name="shotcut:animIn">30</property>
+    </filter>
+    <filter id="filter87" out="00:00:09.882">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+    <filter id="filter88" out="00:00:09.882">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:09.299=0;00:00:09.882=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">36</property>
+    </filter>
+    <filter id="filter89" out="00:00:09.882">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:00.483=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">30</property>
+    </filter>
+  </chain>
+  <chain id="chain24" out="00:00:09.882">
+    <property name="length">00:00:09.899</property>
+    <property name="eof">pause</property>
+    <property name="resource">GREEN SCREEN INSCREVA-SE E LIKE By MIGUEL.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">384bce5a8dafd1e38cde60c469b29999</property>
+    <property name="shotcut:caption">GREEN SCREEN INSCREVA-SE E LIKE By MIGUEL.mp4</property>
+    <filter id="filter90" out="00:00:09.882">
+      <property name="version">0.4</property>
+      <property name="mlt_service">frei0r.bluescreen0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00ef00</property>
+      <property name="1">0.288</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter91" out="00:00:09.882">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-197.168 398.23 849.558 477.876 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter92" out="00:00:09.882">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">00:00:09.299=1;00:00:09.882=0</property>
+      <property name="shotcut:animOut">36</property>
+    </filter>
+    <filter id="filter93" out="00:00:09.882">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">00:00:00.000=0;00:00:00.483=1</property>
+      <property name="shotcut:animIn">30</property>
+    </filter>
+    <filter id="filter94" out="00:00:09.882">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+    <filter id="filter95" out="00:00:09.882">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:09.299=0;00:00:09.882=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">36</property>
+    </filter>
+    <filter id="filter96" out="00:00:09.882">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:00.483=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">30</property>
+    </filter>
+  </chain>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <blank length="00:00:00.017"/>
+    <entry producer="chain22" in="00:00:00.000" out="00:00:09.882"/>
+    <blank length="00:21:22.448"/>
+    <entry producer="chain23" in="00:00:00.000" out="00:00:09.882"/>
+    <blank length="00:34:45.296"/>
+    <entry producer="chain24" in="00:00:00.000" out="00:00:09.882"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 22.01.30" in="00:00:00.000" out="01:02:21.098">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="shotcut:scaleFactor">0.0398071</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <track producer="playlist1"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+  </tractor>
+</mlt>
